@@ -1,0 +1,7 @@
+
+
+0 0 * * * nsb_daily_operations.sh  >> nsb_daily_operations.logs 2>&1
+5,10,15 * * * * nsb_launch_probe.sh >> nsb_launch_probe.logs 2>&1
+1,16,31,46 * * * * nsb_send_all_mails.sh >> nsb_send_all_mails.logs 2>&1
+
+
